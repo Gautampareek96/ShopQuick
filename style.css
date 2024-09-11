@@ -215,20 +215,93 @@
 /*---------------------------------------------------------HERO SECTION---------------------------*/
 
 .hero-section{
-  background-image: url(images/shopping-cart-with-wooden-elements.jpg);
-  height: 700px ;
+  background-image: url(images/cartt.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  height: 520px ;
   width: 100%;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slides {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  background-size: cover;
-  background-position: center bottom;
-  background-repeat: no-repeat;
+  align-items: center;
 }
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.5); 
+  height: 400px; 
+  width: 600px; 
+  margin-top: 60px; 
+  margin-left: 500px;
+  margin-right: 500px;
+}
+
+.displaySlide {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hideSlide {
+  opacity: 0;
+  visibility: hidden;
+}
+/*
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1;
+}
+*/
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 10rem;
+  background-color: #54F0B448;
+  color: #4886C8;
+  border: none;
+  cursor: pointer;
+}
+
+.prev{
+  left: 10px;
+}
+.next{
+  right: 10px;
+}*/
+
 
 /*--------------------------------------------------------SHOP SECTION IN HERO----------------------*/
 
+.shop1{
+  background-color:#ffffff ;
+}
+
 .shop-section{
+  background-color:#4886C8 ;
+  padding-top: 15px;
   display: flex;
   width: 100%;
   justify-content: space-evenly;
